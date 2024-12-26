@@ -1,0 +1,21 @@
+spring:
+  application:
+        name: ordernow
+  datasource:
+    url: jdbc:mysql://104.198.130.188:3306/ordernow-db?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+    username: root
+    password: ordernow24
+
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+
+#  graphql:
+#    graphiql:
+#      enabled: true
+
+#security:
+#  oauth2:
+#    resource:
+#      user-info-uri: http://localhost:7070/auth/userinfo
