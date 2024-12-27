@@ -1,0 +1,21 @@
+spring:
+  application:
+        name: ordernow
+  datasource:
+    url: ${DBURL}
+    username: ${USERNAME}
+    password: ${PASSWORD}
+
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+
+#  graphql:
+#    graphiql:
+#      enabled: true
+
+#security:
+#  oauth2:
+#    resource:
+#      user-info-uri: http://localhost:7070/auth/userinfo
