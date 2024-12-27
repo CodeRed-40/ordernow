@@ -2,9 +2,9 @@ spring:
   application:
         name: ordernow
   datasource:
-    url: jdbc:mysql://104.198.130.188:3306/ordernow-db?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
-    username: root
-    password: ordernow24
+    url: ${DBURL}
+    username: ${USERNAME}
+    password: ${PASSWORD}
 
   jpa:
     hibernate:

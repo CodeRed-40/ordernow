@@ -11,22 +11,23 @@ import java.util.List;
 
 @RestController
 @ComponentScan("com.myapp.ordernow.service")
+@RequestMapping("/order")
 public class TestController {
 
     @Autowired
     private TestService testService;
 
-    @GetMapping("/order/All")
+    @GetMapping("/all")
     public List<Order> test() {
         return testService.findAllOrder();
     }
 
-    @PostMapping("/order/save")
+    @PostMapping("/save")
     public Order saveOrder(@RequestBody Order order) {
         return testService.saveOrder(order);
     }
 
-    @GetMapping("/order/name")
+    @GetMapping("/{name}")
     public Order findOrderByName(@PathVariable String name) {
         return testService.findOrderByName(name);
     }
